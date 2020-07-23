@@ -1,14 +1,21 @@
 {
   "expo": {
-    "name": "rn-complete-guide5",
-    "slug": "rn-complete-guide5",
+    "name": "Great Places",
+    "description": "Some text",
+    "slug": "great-places",
+    "sdkVersion": "38.0.0",
+    "privacy": "public",
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/places.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash_icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#171717"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -17,10 +24,27 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.jroblesperez.great-places-course",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "android": {
+      "package": "com.jroblesperez.great_places_course",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/places-adaptive.png",
+        "backgroundColor": "#171717"
+      },
+      "permissions": [
+        "CAMERA", 
+        "ACCESS_FINE_LOCATION",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCzhaHiU2X_5kgPh7hwdcjFvXfSLAmzcp8"
+        }
+      }
     }
   }
 }
